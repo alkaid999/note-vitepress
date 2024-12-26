@@ -1,0 +1,6 @@
+# 缓存
+docs/.vitepress/cache
+# 打包
+docs/.vitepress/dist
+# Node.js 模块
+node_modules/
