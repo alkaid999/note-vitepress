@@ -1,0 +1,66 @@
+/* 深浅色卡 */
+:root {
+    --sidebar-bg: #ffffff;
+    --sidebar-hover-text: #000000;
+    --sidebar-hover-bg: #f2f2f2;
+    --sidebar-active-text: #33adff;
+    --sidebar-active-bg: #7fa3ff29;
+
+}
+
+.dark {
+    --sidebar-bg: #1b1b1f;
+    --sidebar-hover-text: #33adff;
+    --sidebar-hover-bg: #5454545a;
+    --sidebar-active-text: #66c2ff;
+}
+
+:root {
+    --vp-sidebar-bg-color: var(--sidebar-bg);
+}
+
+/* 侧边栏项的左边距 */
+.VPSidebarItem .item {
+    padding-left: 10px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+/* 鼠标悬停时改变字体颜色 */
+nav#VPSidebarNav .VPSidebarItem .item:hover .text {
+    color: var(--sidebar-hover-text);
+}
+
+/* 鼠标悬停时改变背景颜色 */
+nav#VPSidebarNav .VPSidebarItem .item:hover {
+    transition: color 0.5s, background-color 0.5s;
+    background-color: var(--sidebar-hover-bg);
+    border-radius: 10px 50px 50px 10px;
+}
+
+/* 当前选中的侧边栏项的字体颜色 */
+nav#VPSidebarNav .VPSidebarItem.is-active .item .text {
+    color: var(--sidebar-active-text);
+}
+
+/* 当前选中的侧边栏项的背景颜色 */
+nav#VPSidebarNav .VPSidebarItem.is-active .item {
+    background-color: var(--sidebar-active-bg);
+    /* 改变背景颜色 */
+    border-radius: 10px 50px 50px 10px;
+    /* 添加圆角 */
+}
+
+
+/* 大纲字体边距 */
+.VPDocAsideOutline .outline-link {
+    padding-left: 10px;
+}
+
+/* 鼠标悬停时改变大纲字体颜色和背景颜色 */
+.VPDocAsideOutline .outline-link:hover {
+    color: var(sidebar-hover-text);
+    transition: color 0.5s, background-color 0.5s;
+    background-color: var(--sidebar-active-bg);
+    border-radius: 10px 50px 50px 10px;
+}

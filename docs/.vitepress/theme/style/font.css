@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'customFont';
+    src: url('/fonts/SarasaMonoSC-Regular.ttf') format('truetype');
+}
+
+:root {
+    --vp-font-family-base: "customFont"
+}

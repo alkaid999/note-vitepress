@@ -1,0 +1,27 @@
+/* 深浅色卡 */
+:root {
+    --sidebar-bg: #ffffff;
+    --sidebar-active-bg: #7fa3ff29;
+}
+
+.dark {
+    --sidebar-bg: #1b1b1f;
+}
+
+.VPNavBarMenu .VPNavBarMenuLink.active {
+    color: --sidebar-bg;
+    background-color: var(--sidebar-active-bg);
+    border-radius: 15px;
+
+}
+
+.VPNavBarMenu .VPNavBarMenuLink:hover {
+    color: --sidebar-bg;
+    background-color: var(--sidebar-active-bg);
+    border-radius: 15px;
+}
+
+.VPNavBarMenu .VPNavBarMenuLink {
+    height: 30px;
+    margin-left: 10px;
+}

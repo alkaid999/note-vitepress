@@ -1,0 +1,16 @@
+/* 主题变量样式修改 */
+:root {
+    --vp-c-brand-1: #0095ff;
+    --vp-c-brand-2: #33adff;
+    --vp-c-brand-3: #66c2ff;
+}
+
+/* 放大图片插件遮挡样式 */
+.medium-zoom-overlay {
+    z-index: 30;
+}
+
+.medium-zoom-image {
+    z-index: 9999 !important;
+    /* 给的值是21，但是实测盖不住，直接999 */
+}
