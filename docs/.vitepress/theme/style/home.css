@@ -1,0 +1,23 @@
+/* 暗黑主题颜色 */
+.dark {
+    .index-page {
+        background-image: linear-gradient(rgba(0, 0, 0, 5), rgba(0, 0, 0, 0.1)), url('/images/homepage-bg.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+/* 首页背景图片 */
+.index-page {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgb(255, 255, 255.0)), url('/images/homepage-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+:root {
+    /* 标题 */
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+}
