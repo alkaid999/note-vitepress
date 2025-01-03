@@ -1,0 +1,14 @@
+kbd {
+    display: inline-block;
+    padding: 0.2em 0.3em;
+    font-size: 1em;
+    line-height: 1.0;
+    color: #555;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 2px #fff;
+    white-space: nowrap;
+    font-family: Arial, sans-serif;
+    margin: 0 0.1em;
+}
