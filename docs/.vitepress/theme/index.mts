@@ -13,9 +13,9 @@ import ArticleMetadata from "./components/ArticleMetadata.vue"
 
 export default {
   extends: DefaultTheme,
-  // 字数及阅读时间
+  // 注册全局组件
   enhanceApp({app}) { 
-    // 注册全局组件
+    // 字数及阅读时间组件
     app.component('ArticleMetadata' , ArticleMetadata)
   },
   // 返回顶部插件设置
