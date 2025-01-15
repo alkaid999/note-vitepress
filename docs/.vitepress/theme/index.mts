@@ -1,42 +1,65 @@
-import DefaultTheme from 'vitepress/theme'
-// 导入自定义样式
+import DefaultTheme from 'vitepress/theme';
+// 导入自定义样式文件
 import './style/index.css';
 // 导入图片放大插件
 import mediumZoom from 'medium-zoom';
 import { onMounted, watch, nextTick } from 'vue';
-import { useRoute } from 'vitepress';
-// 使用插槽 backTop
+import { useRoute, useData } from 'vitepress';
+// 使用插槽实现返回顶部按钮
 import { h } from 'vue';
-import backTop from './components/backtotop.vue'
-// 导入字数及阅读时间
-import ArticleMetadata from "./components/ArticleMetadata.vue"
+import backTop from './components/backtotop.vue';
+// 导入文章元数据组件（字数统计和阅读时间）
+import ArticleMetadata from './components/ArticleMetadata.vue';
+// 导入导航页面组件
+import MNavLinks from './components/MNavLinks.vue'
 
 export default {
-  extends: DefaultTheme,
+  extends: DefaultTheme, // 继承默认主题
+
   // 注册全局组件
-  enhanceApp({app}) { 
-    // 字数及阅读时间组件
-    app.component('ArticleMetadata' , ArticleMetadata)
+  enhanceApp({ app }) {
+    // 注册文章元数据组件
+    app.component('ArticleMetadata', ArticleMetadata);
+    // 注册导航页面组件
+    app.component('MNavLinks' , MNavLinks)
   },
-  // 返回顶部插件设置
-  Layout() { 
-    return h(DefaultTheme.Layout, null, {
-      'doc-footer-before': () => h(backTop), // 使用doc-footer-before插槽
-    })
+
+  // 自定义布局
+  Layout() {
+    const props: Record<string, any> = {};
+    // 获取 frontmatter 数据
+    const { frontmatter } = useData();
+
+    // 如果 frontmatter 中定义了 layoutClass，则添加到布局的 class 中
+    if (frontmatter.value?.layoutClass) {
+      props.class = frontmatter.value.layoutClass;
+    }
+
+    // 使用默认布局，并注入返回顶部按钮到 doc-footer-before 插槽
+    return h(DefaultTheme.Layout, props, {
+      'doc-footer-before': () => h(backTop),
+    });
   },
+
+  // 初始化逻辑
   setup() {
-    // 图片放大插件
     const route = useRoute();
+
+    // 初始化图片放大功能
     const initZoom = () => {
-      // mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' }); // 默认
-      mediumZoom('.main img', { background: 'var(--vp-c-bg)' }); // 不显式添加{data-zoomable}的情况下为所有图像启用此功能
+      // 为所有 .main img 元素启用图片放大功能
+      mediumZoom('.main img', { background: 'var(--vp-c-bg)' });
     };
+
+    // 组件挂载时初始化图片放大功能
     onMounted(() => {
       initZoom();
     });
+
+    // 监听路由变化，在路由变化后重新初始化图片放大功能
     watch(
       () => route.path,
-      () => nextTick(() => initZoom())
+      () => nextTick(() => initZoom()),
     );
   },
-}
+};
