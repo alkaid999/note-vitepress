@@ -3,7 +3,7 @@ import type { DefaultTheme } from 'vitepress'
 export const sidebar: DefaultTheme.Config['sidebar'] = {
     '/linux': [
         {
-            collapsed: false, // 折叠侧边栏
+            collapsed: true, // 折叠侧边栏
             text: 'Linux 简介',
             items: [
                 { text: '发展经历', link: '/linux/01_Info/01' },
@@ -43,6 +43,15 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
                 { text: 'YUM/DNF 包管理器', link: '/linux/04_Software/03.md' },
                 { text: '源码包管理', link: '/linux/04_Software/04.md' },
                 { text: '从源码包构建 RPM 包', link: '/linux/04_Software/05.md' },
+            ],
+        },
+        {
+            collapsed: true,
+            text: '文本处理',
+            items: [
+                { text: 'Vim 文本编辑器', link: '/linux/05_Text/01.md' },
+                { text: 'Vim 插件', link: '/linux/05_Text/02.md' },
+                { text: '文本处理命令', link: '/linux/05_Text/03.md' },
             ],
         },
     ]
