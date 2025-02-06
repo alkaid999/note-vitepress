@@ -27,25 +27,10 @@ export default withMermaid({
 
             // 调用原始渲染
             let defaultContent = defaultRender.apply(md, args)
-            // 替换内容
-            defaultContent = defaultContent
-              .replace(/TIP/g, '提示')
-              .replace(/NOTE/g, '提醒')
-              .replace(/IMPORTANT/g, '重要')
-              .replace(/WARNING/g, '警告')
-              .replace(/CAUTION/g, '注意')
             // 返回渲染的内容
             return defaultContent
           }
         })
-    },
-    // 容器默认标题
-    container: {
-      tipLabel: '提示',
-      warningLabel: '警告',
-      dangerLabel: '危险',
-      infoLabel: '信息',
-      detailsLabel: '详细信息'
     },
   },
   //mermaid配置
