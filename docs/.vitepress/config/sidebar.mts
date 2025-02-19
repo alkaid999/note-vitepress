@@ -52,6 +52,9 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
                 { text: 'Vim 文本编辑器', link: '/linux/05_Text/01.md' },
                 { text: 'Vim 插件', link: '/linux/05_Text/02.md' },
                 { text: '文本处理命令', link: '/linux/05_Text/03.md' },
+                { text: 'grep', link: '/linux/05_Text/04.md' },
+                { text: 'sed', link: '/linux/05_Text/05.md' },
+                { text: 'awk', link: '/linux/05_Text/06.md' },
             ],
         },
     ]
