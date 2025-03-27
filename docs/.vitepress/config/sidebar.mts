@@ -57,5 +57,15 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
                 { text: 'awk', link: '/linux/05_Text/06.md' },
             ],
         },
+        {
+            collapsed: true,
+            text: '用户和用户组管理',
+            items: [
+                { text: '用户与用户组概述', link: '/linux/06_User/01.md' },
+                { text: '配置文件', link: '/linux/06_User/02.md' },
+                { text: '管理命令', link: '/linux/06_User/03.md' },
+                
+            ],
+        },
     ]
 }
