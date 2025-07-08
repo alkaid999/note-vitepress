@@ -67,5 +67,17 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
                 
             ],
         },
+        {
+            collapsed: true,
+            text: '权限管理',
+            items: [
+                { text: '权限管理基础', link: '/linux/07_Permission/01.md' },
+                { text: '修改权限', link: '/linux/07_Permission/02.md' },
+                { text: '特殊权限', link: '/linux/07_Permission/03.md' },
+                { text: 'ACL 访问控制权限', link: '/linux/07_Permission/04.md' },
+                { text: '扩展文件属性', link: '/linux/07_Permission/05.md' },
+                { text: 'sudo 和 su 命令', link: '/linux/07_Permission/06.md' },
+            ],
+        },
     ]
 }
