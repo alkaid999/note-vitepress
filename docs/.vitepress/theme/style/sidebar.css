@@ -65,3 +65,11 @@ nav#VPSidebarNav .VPSidebarItem.is-active .item {
     border-radius: 10px 50px 50px 10px;
     transform: translateX(5px); /* 添加向右移动的动画 */
 }
+
+/* 当前选中的大纲项的背景颜色 */
+.VPDocAsideOutline .outline-link.active,
+.VPDocAsideOutline .outline-link.active:hover {
+    background-color: var(--sidebar-active-bg);
+    color: var(--sidebar-active-text);
+    border-radius: 10px 50px 50px 10px;
+}

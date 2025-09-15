@@ -9,7 +9,7 @@
 }
 
 .VPNavBarMenu .VPNavBarMenuLink.active {
-    color: --sidebar-bg;
+    color:var(--sidebar-bg);
     background-color: var(--sidebar-active-bg);
     border-radius: 15px;
 

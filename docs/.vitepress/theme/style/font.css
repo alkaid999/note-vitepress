@@ -1,19 +1,15 @@
 @font-face {
     font-family: 'customFont';
     src: url('/fonts/SarasaMonoSC-Regular.ttf') format('truetype');
-    font-weight: normal;
-    /* 定义常规样式 */
+    font-weight: normal; /* 定义常规样式 */
 }
 
 @font-face {
     font-family: 'customFont';
-    src: url('/fonts/SarasaMonoSC-Bold.ttf') format('truetype');
-    /* 确保你有粗体版本的字体文件 */
-    font-weight: bold;
-    /* 定义粗体样式 */
+    src: url('/fonts/LXGWWenKaiMono-Medium.ttf') format('truetype'); /* 粗体版本的字体文件 */
+    font-weight: bold; /* 定义粗体样式 */
 }
 
 :root {
-    --vp-font-family-base: "customFont";
-    /* 设置 VitePress 使用的默认字体 */
+    --vp-font-family-base: "customFont"; /* 设置 VitePress 使用的默认字体 */
 }
