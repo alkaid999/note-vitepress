@@ -24,6 +24,7 @@
     padding-left: 10px;
     margin-top: 1px;
     margin-bottom: 1px;
+    transition: all 0.3s ease; /* 添加过渡效果 */
 }
 
 /* 鼠标悬停时改变字体颜色 */
@@ -33,9 +34,10 @@ nav#VPSidebarNav .VPSidebarItem .item:hover .text {
 
 /* 鼠标悬停时改变背景颜色 */
 nav#VPSidebarNav .VPSidebarItem .item:hover {
-    transition: color 0.5s, background-color 0.5s;
+    transition: all 0.3s ease;
     background-color: var(--sidebar-hover-bg);
     border-radius: 10px 50px 50px 10px;
+    transform: translateX(5px); /* 添加向右移动的动画 */
 }
 
 /* 当前选中的侧边栏项的字体颜色 */
@@ -45,22 +47,21 @@ nav#VPSidebarNav .VPSidebarItem.is-active .item .text {
 
 /* 当前选中的侧边栏项的背景颜色 */
 nav#VPSidebarNav .VPSidebarItem.is-active .item {
-    background-color: var(--sidebar-active-bg);
-    /* 改变背景颜色 */
-    border-radius: 10px 50px 50px 10px;
-    /* 添加圆角 */
+    background-color: var(--sidebar-active-bg); /* 改变背景颜色 */
+    border-radius: 10px 50px 50px 10px; /* 添加圆角 */
 }
-
 
 /* 大纲字体边距 */
 .VPDocAsideOutline .outline-link {
     padding-left: 10px;
+    transition: all 0.3s ease; /* 添加过渡效果 */
 }
 
 /* 鼠标悬停时改变大纲字体颜色和背景颜色 */
 .VPDocAsideOutline .outline-link:hover {
-    color: var(sidebar-hover-text);
-    transition: color 0.5s, background-color 0.5s;
+    color: var(--sidebar-hover-text);
+    transition: all 0.3s ease;
     background-color: var(--sidebar-active-bg);
     border-radius: 10px 50px 50px 10px;
+    transform: translateX(5px); /* 添加向右移动的动画 */
 }
