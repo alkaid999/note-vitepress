@@ -1,27 +1,51 @@
 /* 深浅色卡 */
 :root {
     --sidebar-bg: #ffffff;
+    --sidebar-hover-text: #000000;
+    --sidebar-hover-bg: #f2f2f2;
+    --sidebar-active-text: #33adff;
     --sidebar-active-bg: #7fa3ff29;
 }
 
 .dark {
     --sidebar-bg: #1b1b1f;
+    --sidebar-hover-text: #33adff;
+    --sidebar-hover-bg: #5454545a;
+    --sidebar-active-text: #66c2ff;
 }
 
-.VPNavBarMenu .VPNavBarMenuLink.active {
-    color:var(--sidebar-bg);
-    background-color: var(--sidebar-active-bg);
-    border-radius: 15px;
-
-}
-
-.VPNavBarMenu .VPNavBarMenuLink:hover {
-    color: --sidebar-bg;
-    background-color: var(--sidebar-active-bg);
-    border-radius: 15px;
-}
-
+/* 导航栏链接 */
 .VPNavBarMenu .VPNavBarMenuLink {
     height: 30px;
     margin-left: 10px;
+    color: var(--vp-c-text-1); /* 默认字体颜色 */
+    transition: all 0.3s ease;
+}
+
+/* 导航栏链接悬停效果 */
+.VPNavBarMenu .VPNavBarMenuLink:hover {
+    color: var(--sidebar-hover-text); /* 使用与侧边栏相同的悬停字体颜色 */
+    background-color: var(--sidebar-hover-bg); /* 使用与侧边栏相同的悬停背景颜色 */
+    border-radius: 15px;
+    transform: translateY(-2px); /* 向上移动的动画 */
+}
+
+/* 导航栏链接激活状态 */
+.VPNavBarMenu .VPNavBarMenuLink.active {
+    color: var(--sidebar-active-text); /* 使用与侧边栏相同的激活字体颜色 */
+    background-color: var(--sidebar-active-bg); /* 使用与侧边栏相同的激活背景颜色 */
+    border-radius: 15px;
+}
+
+/* 确保深色主题下的正确显示 */
+.dark .VPNavBarMenu .VPNavBarMenuLink {
+    color: var(--vp-c-text-1);
+}
+
+.dark .VPNavBarMenu .VPNavBarMenuLink:hover {
+    color: var(--sidebar-hover-text);
+}
+
+.dark .VPNavBarMenu .VPNavBarMenuLink.active {
+    color: var(--sidebar-active-text);
 }
