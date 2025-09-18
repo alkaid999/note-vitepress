@@ -10,8 +10,6 @@ import { h } from 'vue';
 import backTop from './components/backtotop.vue';
 // 导入文章元数据组件（字数统计和阅读时间）
 import ArticleMetadata from './components/ArticleMetadata.vue';
-// 导入导航页面组件
-import MNavLinks from './components/MNavLinks.vue'
 // 引入时间轴样式
 import "vitepress-markdown-timeline/dist/theme/index.css";
 
@@ -22,8 +20,6 @@ export default {
   enhanceApp({ app }) {
     // 注册文章元数据组件
     app.component('ArticleMetadata', ArticleMetadata);
-    // 注册导航页面组件
-    app.component('MNavLinks', MNavLinks);
   },
 
   // 自定义布局
