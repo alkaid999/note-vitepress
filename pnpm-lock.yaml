@@ -23,6 +23,9 @@ importers:
       debug:
         specifier: ^4.4.1
         version: 4.4.1
+      vitepress-markdown-timeline:
+        specifier: ^1.2.2
+        version: 1.2.2
     devDependencies:
       '@mdit-vue/shared':
         specifier: ^3.0.2
@@ -1282,6 +1285,9 @@ packages:
         optional: true
       terser:
         optional: true
+
+  vitepress-markdown-timeline@1.2.2:
+    resolution: {integrity: sha512-eDFcvudmTW33pI7XdT+ZeUPvpc4CPXI0LZbsZZ54j36G56AN6qYEBiwZpDHl77E4QvqAIJMc8phXXvm7P/Lc+Q==}
 
   vitepress-plugin-mermaid@2.0.17:
     resolution: {integrity: sha512-IUzYpwf61GC6k0XzfmAmNrLvMi9TRrVRMsUyCA8KNXhg/mQ1VqWnO0/tBVPiX5UoKF1mDUwqn5QV4qAJl6JnUg==}
@@ -2631,6 +2637,10 @@ snapshots:
       rollup: 4.29.1
     optionalDependencies:
       fsevents: 2.3.3
+
+  vitepress-markdown-timeline@1.2.2:
+    dependencies:
+      dayjs: 1.11.18
 
   vitepress-plugin-mermaid@2.0.17(mermaid@11.11.0)(vitepress@1.6.4(@algolia/client-search@5.18.0)(postcss@8.5.6)(search-insights@2.17.3)):
     dependencies:

@@ -4,7 +4,8 @@ import { nav } from './config/nav.mts'
 import { sidebar } from './config/sidebar.mts'
 //导入 mermiad 插件
 import { withMermaid } from "vitepress-plugin-mermaid";
-
+//导入时间轴插件
+import timeline from "vitepress-markdown-timeline";
 export default withMermaid({
   title: "NOTE",
   description: "notes",
@@ -30,7 +31,10 @@ export default withMermaid({
             // 返回渲染的内容
             return defaultContent
           }
-        })
+        },
+      )
+        // 时间轴
+        md.use(timeline);
     },
   },
   //mermaid配置

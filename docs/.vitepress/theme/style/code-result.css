@@ -1,0 +1,41 @@
+/* 匹配 result 代码块 */
+.language-result {
+  position: relative;
+  margin-top: -16px !important; /* 与上一个代码块无缝连接 */ 
+  border-top: 1.5px dashed #ccc; /* 分隔符过渡 */
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* 为 result 代码块添加提示文字 */
+.language-result::before {
+  content: "Result: (may be different depending on your environment)";
+  display: block;
+  font-size: 0.7em;
+  color: #666;
+}
+
+/* 为分隔线添加过渡效果 */
+.language-result {
+  transition: border-color 0.3s ease;
+}
+
+.language-result:hover {
+  border-top-color: #999;
+}
+
+/* 使用负边距进一步缩小间距 */
+.language-result pre code {
+  padding-top: 0 !important;
+  margin-top: -25px !important;
+}
+
+/* 确保提示文字在深色主题下也可见 */
+html.dark .language-result::before {
+  color: #aaa;
+}
+
+/* 隐藏复制按钮 */
+.language-result .copy {
+  display: none;
+}
