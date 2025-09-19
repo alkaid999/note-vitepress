@@ -1,0 +1,13 @@
+.language-bash pre {
+  position: relative;
+}
+
+.language-bash pre .line {
+  position: relative;
+}
+
+.language-bash pre .line::before {
+  content: "[root@localhost ~]# ";
+  color: #4CAF50;
+  font-weight: bold;
+}

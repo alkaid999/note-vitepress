@@ -6,6 +6,7 @@ import { sidebar } from './config/sidebar.mts'
 import { withMermaid } from "vitepress-plugin-mermaid";
 //导入时间轴插件
 import timeline from "vitepress-markdown-timeline";
+
 export default withMermaid({
   title: "NOTE",
   description: "notes",
