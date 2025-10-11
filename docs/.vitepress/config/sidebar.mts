@@ -28,7 +28,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
             collapsed: true,
             text: '文件与目录管理',
             items: [
-                { text: '文件系统基础概念', link: '/linux/03_Directory/01' },
+                { text: '目录结构', link: '/linux/03_Directory/01' },
                 { text: '文件和目录', link: '/linux/03_Directory/02' },
                 { text: '基础文件操作命令', link: '/linux/03_Directory/03' },
                 { text: '打包和压缩', link: '/linux/03_Directory/04' },
@@ -77,6 +77,18 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
                 { text: 'ACL 访问控制权限', link: '/linux/07_Permission/04.md' },
                 { text: '扩展文件属性', link: '/linux/07_Permission/05.md' },
                 { text: 'sudo 和 su 命令', link: '/linux/07_Permission/06.md' },
+            ],
+        },
+        {
+            collapsed: true,
+            text: '磁盘管理',
+            items: [
+                { text: '文件系统基础与 VFS', link: '/linux/08_Disk/01.md' },
+                { text: '硬盘结构与工作原理', link: '/linux/08_Disk/02.md' },
+                { text: '设备基础', link: '/linux/08_Disk/03.md' },
+                { text: '分区', link: '/linux/08_Disk/04.md' },
+                { text: '格式化与挂载', link: '/linux/08_Disk/05.md' }
+
             ],
         },
     ]

@@ -4,9 +4,9 @@ pageClass: index-page
 layout: home
 
 hero:
-  name: "青春须早为，岂能长少年？"
+  name: ""
   text: " "
-  tagline: 文档内容皆来源于互联网和 AI 分析
+  tagline: 
 
 features:
   - icon:

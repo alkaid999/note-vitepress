@@ -50,7 +50,7 @@ export default withMermaid({
     //中文化
     outlineTitle: '页面导航',
     // 大纲显示2-3级标题
-    outline: [2, 3],
+    outline: [2, 4],
 
     // 本地搜索
     search: {
