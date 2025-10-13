@@ -12,6 +12,8 @@ import backTop from './components/backtotop.vue';
 import ArticleMetadata from './components/ArticleMetadata.vue';
 // 引入时间轴样式
 import "vitepress-markdown-timeline/dist/theme/index.css";
+// 引入目录树样式
+import { LiteTree } from '@lite-tree/vue'
 
 export default {
   extends: DefaultTheme, // 继承默认主题
@@ -20,6 +22,8 @@ export default {
   enhanceApp({ app }) {
     // 注册文章元数据组件
     app.component('ArticleMetadata', ArticleMetadata);
+    // 注册目录树组件
+    app.component('LiteTree', LiteTree)
   },
 
   // 自定义布局

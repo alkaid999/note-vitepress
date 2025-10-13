@@ -12,6 +12,14 @@ export default withMermaid({
   description: "notes",
   lang: 'zh-CH',
   head: [['link', { rel: 'icon', href: '/images/logo.png' }]],
+  // 添加 Vue 配置（目录树，以便LiteTree可以正确解析lite格式的树数据）
+  vue: {
+    template: {                      
+      compilerOptions: {
+        whitespace: 'preserve'
+      }
+    }
+  },
   // markdown 配置
   markdown: {
     lineNumbers: true,  //行号显示
@@ -41,7 +49,6 @@ export default withMermaid({
   //mermaid配置
   mermaid: {
   },
-
   // Mermaid 插件配置
   mermaidPlugin: {
     class: "mermaid my-class", // 为父容器设置额外的 CSS 类
