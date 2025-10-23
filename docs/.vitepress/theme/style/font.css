@@ -13,3 +13,11 @@
 :root {
     --vp-font-family-base: "customFont"; /* 设置 VitePress 使用的默认字体 */
 }
+
+pre,
+code,
+.shiki,
+.vp-code {
+    /* 强制代码块使用自定义字体，monospace 作为降级备选 */
+    font-family: 'customFont' !important;
+}
