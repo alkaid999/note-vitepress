@@ -19,6 +19,7 @@
     "cytoscape-cose-bilkent": "^4.1.0",
     "dayjs": "^1.11.18",
     "debug": "^4.4.1",
+    "remixicon": "^4.7.0",
     "vitepress-markdown-timeline": "^1.2.2"
   }
 }

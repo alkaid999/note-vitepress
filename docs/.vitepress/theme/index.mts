@@ -14,6 +14,8 @@ import ArticleMetadata from './components/ArticleMetadata.vue';
 import "vitepress-markdown-timeline/dist/theme/index.css";
 // 引入目录树样式
 import { LiteTree } from '@lite-tree/vue'
+// 引入 remixicon 图标
+import 'remixicon/fonts/remixicon.css';
 
 export default {
   extends: DefaultTheme, // 继承默认主题

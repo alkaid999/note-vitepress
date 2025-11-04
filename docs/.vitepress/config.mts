@@ -14,7 +14,7 @@ export default withMermaid({
   head: [['link', { rel: 'icon', href: '/images/logo.png' }]],
   // 添加 Vue 配置（目录树，以便LiteTree可以正确解析lite格式的树数据）
   vue: {
-    template: {                      
+    template: {
       compilerOptions: {
         whitespace: 'preserve'
       }
@@ -41,9 +41,9 @@ export default withMermaid({
             return defaultContent
           }
         },
-      )
-        // 时间轴
-        md.use(timeline);
+        )
+      // 时间轴
+      md.use(timeline);
     },
   },
   //mermaid配置

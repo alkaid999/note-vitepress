@@ -73,3 +73,11 @@ nav#VPSidebarNav .VPSidebarItem.is-active .item {
     color: var(--sidebar-active-text);
     border-radius: 10px 50px 50px 10px;
 }
+
+/* 侧边栏缩放 */
+.group:has([role='button']) .VPSidebarItem.level-0 .items {
+  padding-left: 15px !important;
+  border-left: 1px solid var(--vp-c-divider);
+  border-radius: 2px;
+  transition: background-color 0.25s;
+}
