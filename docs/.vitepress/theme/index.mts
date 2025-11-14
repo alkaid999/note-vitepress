@@ -1,9 +1,10 @@
 import DefaultTheme from 'vitepress/theme';
+import { EnhanceAppContext } from 'vitepress';
 // 导入自定义样式文件
 import './style/index.css';
 // 导入图片放大插件
 import mediumZoom from 'medium-zoom';
-import { onMounted, watch, nextTick } from 'vue';
+import { onMounted, watch, nextTick, Component } from 'vue';
 import { useRoute, useData } from 'vitepress';
 // 使用插槽实现返回顶部按钮
 import { h } from 'vue';
@@ -21,9 +22,9 @@ export default {
   extends: DefaultTheme, // 继承默认主题
 
   // 注册全局组件
-  enhanceApp({ app }) {
+  enhanceApp({ app }: EnhanceAppContext) {
     // 注册文章元数据组件
-    app.component('ArticleMetadata', ArticleMetadata);
+    app.component('ArticleMetadata', ArticleMetadata as Component);
     // 注册目录树组件
     app.component('LiteTree', LiteTree)
   },

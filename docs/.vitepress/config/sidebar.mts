@@ -51,7 +51,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
             items: [
                 { text: '<i class="ri-vimeo-line" style="margin-right: 8px;"></i>Vim 文本编辑器', link: '/linux/05_Text/01.md' },
                 { text: '<i class="ri-puzzle-2-line" style="margin-right: 8px;"></i>Vim 插件', link: '/linux/05_Text/02.md' },
-                { text: '<i class="ri-code-s-slash-line" style="margin-right: 8px;"></i>基文本处理命令', link: '/linux/05_Text/03.md' },
+                { text: '<i class="ri-code-s-slash-line" style="margin-right: 8px;"></i>文本查看/处理命令', link: '/linux/05_Text/03.md' },
                 { text: '<i class="ri-search-2-line" style="margin-right: 8px;"></i>grep', link: '/linux/05_Text/04.md' },
                 { text: '<i class="ri-bar-chart-horizontal-line" style="margin-right: 8px;"></i>sed', link: '/linux/05_Text/05.md' },
                 { text: '<i class="ri-edit-line" style="margin-right: 8px;"></i>awk', link: '/linux/05_Text/06.md' },
@@ -87,8 +87,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
                 { text: '<i class="ri-hard-drive-2-line" style="margin-right: 8px;"></i>硬盘结构与工作原理', link: '/linux/08_Disk/02.md' },
                 { text: '<i class="ri-code-s-slash-line" style="margin-right: 8px;"></i>设备基础与常用命令', link: '/linux/08_Disk/03.md' },
                 { text: '<i class="ri-layout-masonry-line" style="margin-right: 8px;"></i>分区', link: '/linux/08_Disk/04.md' },
-                { text: '<i class="ri-link" style="margin-right: 8px;"></i>格式化与挂载', link: '/linux/08_Disk/05.md' }
-
+                { text: '<i class="ri-link" style="margin-right: 8px;"></i>格式化与挂载', link: '/linux/08_Disk/05.md' },
             ],
         },
     ]

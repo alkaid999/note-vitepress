@@ -9,7 +9,7 @@
 
 /* 为 console 代码块添加提示文字 */
 .language-console::before {
-  content: "Result: (may be different depending on your environment)";
+  content: "执行结果: (可能会根据环境不同而有所差异)";
   display: block;
   font-size: 0.7em;
   color: #666;

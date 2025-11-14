@@ -61,7 +61,7 @@ nav#VPSidebarNav .VPSidebarItem.is-active .item {
 .VPDocAsideOutline .outline-link:hover {
     color: var(--sidebar-hover-text);
     transition: all 0.3s ease;
-    background-color: var(--sidebar-active-bg);
+    background-color: var(--sidebar-hover-bg);
     border-radius: 10px 50px 50px 10px;
     transform: translateX(5px); /* 添加向右移动的动画 */
 }
