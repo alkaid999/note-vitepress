@@ -86,8 +86,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
                 { text: '<i class="ri-node-tree" style="margin-right: 8px;"></i>文件系统基础与 VFS', link: '/linux/08_Disk/01.md' },
                 { text: '<i class="ri-hard-drive-2-line" style="margin-right: 8px;"></i>硬盘结构与工作原理', link: '/linux/08_Disk/02.md' },
                 { text: '<i class="ri-code-s-slash-line" style="margin-right: 8px;"></i>设备基础与常用命令', link: '/linux/08_Disk/03.md' },
-                { text: '<i class="ri-layout-masonry-line" style="margin-right: 8px;"></i>分区', link: '/linux/08_Disk/04.md' },
-                { text: '<i class="ri-link" style="margin-right: 8px;"></i>格式化与挂载', link: '/linux/08_Disk/05.md' },
+                { text: '<i class="ri-layout-masonry-line" style="margin-right: 8px;"></i>分区、格式化与挂载', link: '/linux/08_Disk/04.md' },
             ],
         },
     ]
